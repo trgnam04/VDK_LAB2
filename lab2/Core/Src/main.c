@@ -386,18 +386,18 @@ void update7SEG(int index){
 }
 
 uint8_t status = 0;
-int dot_blinky = 50;
-int led7seg_freg = 50;
+int dot_blinky = 100;
+int led7seg_freg = 100;
 void HAL_TIM_PeriodElapsedCallback(TIM_HandleTypeDef *htim){
 	if(htim->Instance == TIM2){
 
 		if(dot_blinky <= 0){
-			dot_blinky = 50;
+			dot_blinky = 100;
 			HAL_GPIO_TogglePin(GPIOA, DOT_Pin);
 		}
 
 		if(led7seg_freg <= 0){
-			led7seg_freg = 50;
+			led7seg_freg = 100;
 
 			if(index_led >= MAX_LED){
 				index_led = 0;

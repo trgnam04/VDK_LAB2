@@ -1001,8 +1001,8 @@ void update7SEG(int index){
 08000734 <HAL_TIM_PeriodElapsedCallback>:
 
 uint8_t status = 0;
-int dot_blinky = 50;
-int led7seg_freg = 50;
+int dot_blinky = 100;
+int led7seg_freg = 100;
 void HAL_TIM_PeriodElapsedCallback(TIM_HandleTypeDef *htim){
  8000734:	b580      	push	{r7, lr}
  8000736:	b082      	sub	sp, #8
@@ -1019,9 +1019,9 @@ void HAL_TIM_PeriodElapsedCallback(TIM_HandleTypeDef *htim){
  8000748:	681b      	ldr	r3, [r3, #0]
  800074a:	2b00      	cmp	r3, #0
  800074c:	dc06      	bgt.n	800075c <HAL_TIM_PeriodElapsedCallback+0x28>
-			dot_blinky = 50;
+			dot_blinky = 100;
  800074e:	4b16      	ldr	r3, [pc, #88]	; (80007a8 <HAL_TIM_PeriodElapsedCallback+0x74>)
- 8000750:	2232      	movs	r2, #50	; 0x32
+ 8000750:	2264      	movs	r2, #100	; 0x64
  8000752:	601a      	str	r2, [r3, #0]
 			HAL_GPIO_TogglePin(GPIOA, DOT_Pin);
  8000754:	2110      	movs	r1, #16
@@ -1034,9 +1034,9 @@ void HAL_TIM_PeriodElapsedCallback(TIM_HandleTypeDef *htim){
  800075e:	681b      	ldr	r3, [r3, #0]
  8000760:	2b00      	cmp	r3, #0
  8000762:	dc12      	bgt.n	800078a <HAL_TIM_PeriodElapsedCallback+0x56>
-			led7seg_freg = 50;
+			led7seg_freg = 100;
  8000764:	4b12      	ldr	r3, [pc, #72]	; (80007b0 <HAL_TIM_PeriodElapsedCallback+0x7c>)
- 8000766:	2232      	movs	r2, #50	; 0x32
+ 8000766:	2264      	movs	r2, #100	; 0x64
  8000768:	601a      	str	r2, [r3, #0]
 
 			if(index_led >= MAX_LED){
