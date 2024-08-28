@@ -42,9 +42,15 @@
 
 /* Private variables ---------------------------------------------------------*/
 TIM_HandleTypeDef htim2;
+const int MAX_LED = 4;
+int index_led = 0;
+int led_buffer[4] = {1, 2, 3, 4};
+
 
 /* USER CODE BEGIN PV */
 void Display_leg7seg(uint8_t counter);
+void update7SEG(int index);
+
 
 /* USER CODE END PV */
 
@@ -338,12 +344,50 @@ void Display_leg7seg(uint8_t counter){
 		}
 }
 
+void update7SEG(int index){
+	switch(index){
+		case 0:{
+			HAL_GPIO_WritePin(GPIOA, EN0_Pin, 0);
+			HAL_GPIO_WritePin(GPIOA, EN1_Pin, 1);
+			HAL_GPIO_WritePin(GPIOA, EN2_Pin, 1);
+			HAL_GPIO_WritePin(GPIOA, EN3_Pin, 1);
+			Display_leg7seg(1);
+
+			break;
+		}
+		case 1:{
+			HAL_GPIO_WritePin(GPIOA, EN0_Pin, 1);
+			HAL_GPIO_WritePin(GPIOA, EN1_Pin, 0);
+			HAL_GPIO_WritePin(GPIOA, EN2_Pin, 1);
+			HAL_GPIO_WritePin(GPIOA, EN3_Pin, 1);
+			Display_leg7seg(2);
+
+			break;
+		}
+		case 2:{
+			HAL_GPIO_WritePin(GPIOA, EN0_Pin, 1);
+			HAL_GPIO_WritePin(GPIOA, EN1_Pin, 1);
+			HAL_GPIO_WritePin(GPIOA, EN2_Pin, 0);
+			HAL_GPIO_WritePin(GPIOA, EN3_Pin, 1);
+			Display_leg7seg(3);
+
+			break;
+		}
+		case 3:{
+			HAL_GPIO_WritePin(GPIOA, EN0_Pin, 1);
+			HAL_GPIO_WritePin(GPIOA, EN1_Pin, 1);
+			HAL_GPIO_WritePin(GPIOA, EN2_Pin, 1);
+			HAL_GPIO_WritePin(GPIOA, EN3_Pin, 0);
+			Display_leg7seg(4);
+
+			break;
+		}
+	}
+}
+
 uint8_t status = 0;
 int dot_blinky = 50;
 int led7seg_freg = 50;
-uint8_t hour = 0;
-uint8_t min = 0;
-uint8_t sec = 0;
 void HAL_TIM_PeriodElapsedCallback(TIM_HandleTypeDef *htim){
 	if(htim->Instance == TIM2){
 
@@ -352,68 +396,16 @@ void HAL_TIM_PeriodElapsedCallback(TIM_HandleTypeDef *htim){
 			HAL_GPIO_TogglePin(GPIOA, DOT_Pin);
 		}
 
-		if(timer2_counter <= 0){
-			sec++;
-			timer2_counter = 100;
-		}
-
-		if(sec >= 60){
-			min++;
-			sec = 0;
-		}
-		if(min >= 60){
-			hour++;
-			min = 0;
-		}
-		if(hour >= 24){
-			hour = 0;
-		}
-
 		if(led7seg_freg <= 0){
 			led7seg_freg = 50;
-			switch(status){
-			case 0:{
-				Display_leg7seg(min % 10);
-				HAL_GPIO_WritePin(GPIOA, EN0_Pin, 1);
-				HAL_GPIO_WritePin(GPIOA, EN1_Pin, 1);
-				HAL_GPIO_WritePin(GPIOA, EN2_Pin, 1);
-				HAL_GPIO_WritePin(GPIOA, EN3_Pin, 0);
-				status = 1;
-				break;
-			}
-			case 1:{
-				Display_leg7seg(min / 10);
-				HAL_GPIO_WritePin(GPIOA, EN0_Pin, 1);
-				HAL_GPIO_WritePin(GPIOA, EN1_Pin, 1);
-				HAL_GPIO_WritePin(GPIOA, EN2_Pin, 0);
-				HAL_GPIO_WritePin(GPIOA, EN3_Pin, 1);
-				status = 2;
-				break;
-			}
-			case 2:{
-				Display_leg7seg(sec % 10);
-				HAL_GPIO_WritePin(GPIOA, EN0_Pin, 1);
-				HAL_GPIO_WritePin(GPIOA, EN1_Pin, 0);
-				HAL_GPIO_WritePin(GPIOA, EN2_Pin, 1);
-				HAL_GPIO_WritePin(GPIOA, EN3_Pin, 1);
-				status = 3;
-				break;
-			}
-			case 3:{
-				Display_leg7seg(sec / 10);
-				HAL_GPIO_WritePin(GPIOA, EN0_Pin, 0);
-				HAL_GPIO_WritePin(GPIOA, EN1_Pin, 1);
-				HAL_GPIO_WritePin(GPIOA, EN2_Pin, 1);
-				HAL_GPIO_WritePin(GPIOA, EN3_Pin, 1);
-				status = 0;
-				break;
-			}
-			default:
-				break;
+
+			if(index_led >= MAX_LED){
+				index_led = 0;
 			}
 
+			update7SEG(index_led++);
 		}
-		timer2_counter--;
+
 		dot_blinky--;
 		led7seg_freg--;
 
