@@ -44,12 +44,16 @@
 TIM_HandleTypeDef htim2;
 const int MAX_LED = 4;
 int index_led = 0;
+uint8_t hour = 0;
+uint8_t minute = 0;
+uint8_t second = 0;
 int led_buffer[4] = {1, 2, 3, 4};
 
 
 /* USER CODE BEGIN PV */
 void Display_leg7seg(uint8_t counter);
 void update7SEG(int index);
+void updateClockBuffer(uint8_t hour, uint8_t minute);
 
 
 /* USER CODE END PV */
@@ -110,6 +114,21 @@ int main(void)
     /* USER CODE END WHILE */
 
     /* USER CODE BEGIN 3 */
+	  second++;
+	  if(second >= 60){
+		  second = 0;
+		  minute++;
+	  }
+	  if(minute >= 60){
+		  minute = 0;
+		  hour++;
+	  }
+	  if(hour >= 24){
+		  hour = 0;
+	  }
+	  updateClockBuffer(hour, minute);
+	  HAL_Delay(1000);
+
   }
   /* USER CODE END 3 */
 }
@@ -344,6 +363,14 @@ void Display_leg7seg(uint8_t counter){
 		}
 }
 
+void updateClockBuffer(uint8_t hour, uint8_t minute){
+	led_buffer[0] = minute % 10;
+	led_buffer[1] = minute / 10;
+	led_buffer[2] = hour % 10;
+	led_buffer[3] = hour / 10;
+
+}
+
 void update7SEG(int index){
 	switch(index){
 		case 0:{
@@ -351,7 +378,7 @@ void update7SEG(int index){
 			HAL_GPIO_WritePin(GPIOA, EN1_Pin, 1);
 			HAL_GPIO_WritePin(GPIOA, EN2_Pin, 1);
 			HAL_GPIO_WritePin(GPIOA, EN3_Pin, 1);
-			Display_leg7seg(1);
+			Display_leg7seg(led_buffer[0]);
 
 			break;
 		}
@@ -360,7 +387,7 @@ void update7SEG(int index){
 			HAL_GPIO_WritePin(GPIOA, EN1_Pin, 0);
 			HAL_GPIO_WritePin(GPIOA, EN2_Pin, 1);
 			HAL_GPIO_WritePin(GPIOA, EN3_Pin, 1);
-			Display_leg7seg(2);
+			Display_leg7seg(led_buffer[1]);
 
 			break;
 		}
@@ -369,7 +396,7 @@ void update7SEG(int index){
 			HAL_GPIO_WritePin(GPIOA, EN1_Pin, 1);
 			HAL_GPIO_WritePin(GPIOA, EN2_Pin, 0);
 			HAL_GPIO_WritePin(GPIOA, EN3_Pin, 1);
-			Display_leg7seg(3);
+			Display_leg7seg(led_buffer[2]);
 
 			break;
 		}
@@ -378,7 +405,7 @@ void update7SEG(int index){
 			HAL_GPIO_WritePin(GPIOA, EN1_Pin, 1);
 			HAL_GPIO_WritePin(GPIOA, EN2_Pin, 1);
 			HAL_GPIO_WritePin(GPIOA, EN3_Pin, 0);
-			Display_leg7seg(4);
+			Display_leg7seg(led_buffer[3]);
 
 			break;
 		}
