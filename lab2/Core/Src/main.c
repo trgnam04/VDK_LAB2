@@ -114,20 +114,25 @@ int main(void)
     /* USER CODE END WHILE */
 
     /* USER CODE BEGIN 3 */
-	  second++;
-	  if(second >= 60){
-		  second = 0;
-		  minute++;
+	  if(timer2_flag){
+		  second++;
+		  if(second >= 60){
+			  second = 0;
+			  minute++;
+		  }
+		  if(minute >= 60){
+			  minute = 0;
+			  hour++;
+		  }
+		  if(hour >= 24){
+			  hour = 0;
+		  }
+		  updateClockBuffer(hour, minute);
+
+		  setTimer2(1000);
+
 	  }
-	  if(minute >= 60){
-		  minute = 0;
-		  hour++;
-	  }
-	  if(hour >= 24){
-		  hour = 0;
-	  }
-	  updateClockBuffer(hour, minute);
-	  HAL_Delay(1000);
+
 
   }
   /* USER CODE END 3 */
@@ -433,6 +438,7 @@ void HAL_TIM_PeriodElapsedCallback(TIM_HandleTypeDef *htim){
 			update7SEG(index_led++);
 		}
 
+		timer_run();
 		dot_blinky--;
 		led7seg_freg--;
 

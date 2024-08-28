@@ -9,11 +9,11 @@
 #define INC_SOFTWARE_TIMER_H_
 
 extern int timer2_counter;
-extern unsigned char timer2_flag;
+extern int timer2_flag;
+extern const int TIMER_CYCLE;
 
-
-void timer2Init();
-void setTimer2(int duration);
+extern void setTimer2(int duration);
+extern void timer_run();
 
 
 #endif /* INC_SOFTWARE_TIMER_H_ */
