@@ -129,8 +129,12 @@ int main(void)
 		  }
 		  updateClockBuffer(hour, minute);
 
-		  setTimer2(1000);
+		  if(index_led >= MAX_LED){
+				index_led = 0;
+		  }
+		  update7SEG(index_led++);
 
+		  setTimer2(1000);
 	  }
 
 
@@ -428,21 +432,9 @@ void HAL_TIM_PeriodElapsedCallback(TIM_HandleTypeDef *htim){
 			HAL_GPIO_TogglePin(GPIOA, DOT_Pin);
 		}
 
-		if(led7seg_freg <= 0){
-			led7seg_freg = 100;
-
-			if(index_led >= MAX_LED){
-				index_led = 0;
-			}
-
-			update7SEG(index_led++);
-		}
-
 		timer_run();
 		dot_blinky--;
 		led7seg_freg--;
-
-
 	}
 }
 
