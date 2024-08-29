@@ -8,12 +8,17 @@
 #ifndef INC_SOFTWARE_TIMER_H_
 #define INC_SOFTWARE_TIMER_H_
 
+extern int timer1_counter;
+extern int timer1_flag;
+
 extern int timer2_counter;
 extern int timer2_flag;
 extern const int TIMER_CYCLE;
 
+extern void setTimer1(int duration);
 extern void setTimer2(int duration);
 extern void timer_run();
+
 
 
 #endif /* INC_SOFTWARE_TIMER_H_ */
