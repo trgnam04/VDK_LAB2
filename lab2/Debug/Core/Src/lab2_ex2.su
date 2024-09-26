@@ -1,0 +1,6 @@
+../Core/Src/lab2_ex2.c:27:6:setTime	16	static
+../Core/Src/lab2_ex2.c:34:6:blinkLed	8	static
+../Core/Src/lab2_ex2.c:42:6:updateTime	4	static
+../Core/Src/lab2_ex2.c:56:6:display_Led7seg	16	static
+../Core/Src/lab2_ex2.c:94:6:Clock_interface	8	static
+../Core/Src/lab2_ex2.c:127:6:display_Clock	8	static
