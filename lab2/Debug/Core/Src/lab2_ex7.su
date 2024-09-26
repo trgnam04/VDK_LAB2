@@ -1,8 +1,0 @@
-../Core/Src/lab2_ex7.c:21:6:setTime	16	static
-../Core/Src/lab2_ex7.c:28:6:blinkLed	8	static
-../Core/Src/lab2_ex7.c:32:6:updateTime	4	static
-../Core/Src/lab2_ex7.c:46:6:display_Led7seg	16	static
-../Core/Src/lab2_ex7.c:84:6:updateClockBuffer	4	static
-../Core/Src/lab2_ex7.c:91:6:update7SEG	16	static
-../Core/Src/lab2_ex7.c:124:6:displayLEDMatrix	16	static
-../Core/Src/lab2_ex7.c:135:6:clearLEDMatrix	8	static

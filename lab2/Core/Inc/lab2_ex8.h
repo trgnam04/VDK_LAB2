@@ -1,12 +1,12 @@
 /*
- * lab2_ex7.h
+ * lab2_ex8.h
  *
  *  Created on: Sep 26, 2024
  *      Author: ASUS
  */
 
-#ifndef INC_LAB2_EX7_H_
-#define INC_LAB2_EX7_H_
+#ifndef INC_LAB2_EX8_H_
+#define INC_LAB2_EX8_H_
 
 #include "main.h"
 
@@ -21,4 +21,4 @@ void updateClockBuffer(void);
 
 
 
-#endif /* INC_LAB2_EX7_H_ */
+#endif /* INC_LAB2_EX8_H_ */

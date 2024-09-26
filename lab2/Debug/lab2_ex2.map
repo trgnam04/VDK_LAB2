@@ -61,49 +61,50 @@ Discarded input sections
  .debug_str     0x0000000000000000       0xde C:/ST/STM32CubeIDE_1.14.0/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.100.202309141235/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp/crt0.o
  .ARM.attributes
                 0x0000000000000000       0x1b C:/ST/STM32CubeIDE_1.14.0/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.100.202309141235/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp/crt0.o
- .group         0x0000000000000000        0xc ./Core/Src/lab2_ex7.o
- .group         0x0000000000000000        0xc ./Core/Src/lab2_ex7.o
- .group         0x0000000000000000        0xc ./Core/Src/lab2_ex7.o
- .group         0x0000000000000000        0xc ./Core/Src/lab2_ex7.o
- .group         0x0000000000000000        0xc ./Core/Src/lab2_ex7.o
- .group         0x0000000000000000        0xc ./Core/Src/lab2_ex7.o
- .group         0x0000000000000000        0xc ./Core/Src/lab2_ex7.o
- .group         0x0000000000000000        0xc ./Core/Src/lab2_ex7.o
- .group         0x0000000000000000        0xc ./Core/Src/lab2_ex7.o
- .group         0x0000000000000000        0xc ./Core/Src/lab2_ex7.o
- .group         0x0000000000000000        0xc ./Core/Src/lab2_ex7.o
- .group         0x0000000000000000        0xc ./Core/Src/lab2_ex7.o
- .group         0x0000000000000000        0xc ./Core/Src/lab2_ex7.o
- .group         0x0000000000000000        0xc ./Core/Src/lab2_ex7.o
- .group         0x0000000000000000        0xc ./Core/Src/lab2_ex7.o
- .group         0x0000000000000000        0xc ./Core/Src/lab2_ex7.o
- .group         0x0000000000000000        0xc ./Core/Src/lab2_ex7.o
- .group         0x0000000000000000        0xc ./Core/Src/lab2_ex7.o
- .group         0x0000000000000000        0xc ./Core/Src/lab2_ex7.o
- .group         0x0000000000000000        0xc ./Core/Src/lab2_ex7.o
- .group         0x0000000000000000        0xc ./Core/Src/lab2_ex7.o
- .group         0x0000000000000000        0xc ./Core/Src/lab2_ex7.o
- .group         0x0000000000000000        0xc ./Core/Src/lab2_ex7.o
- .group         0x0000000000000000        0xc ./Core/Src/lab2_ex7.o
- .group         0x0000000000000000        0xc ./Core/Src/lab2_ex7.o
- .group         0x0000000000000000        0xc ./Core/Src/lab2_ex7.o
- .group         0x0000000000000000        0xc ./Core/Src/lab2_ex7.o
- .group         0x0000000000000000        0xc ./Core/Src/lab2_ex7.o
- .group         0x0000000000000000        0xc ./Core/Src/lab2_ex7.o
- .group         0x0000000000000000        0xc ./Core/Src/lab2_ex7.o
- .group         0x0000000000000000        0xc ./Core/Src/lab2_ex7.o
- .group         0x0000000000000000        0xc ./Core/Src/lab2_ex7.o
- .group         0x0000000000000000        0xc ./Core/Src/lab2_ex7.o
- .group         0x0000000000000000        0xc ./Core/Src/lab2_ex7.o
- .group         0x0000000000000000        0xc ./Core/Src/lab2_ex7.o
- .group         0x0000000000000000        0xc ./Core/Src/lab2_ex7.o
- .text          0x0000000000000000        0x0 ./Core/Src/lab2_ex7.o
- .data          0x0000000000000000        0x0 ./Core/Src/lab2_ex7.o
- .bss           0x0000000000000000        0x0 ./Core/Src/lab2_ex7.o
+ .group         0x0000000000000000        0xc ./Core/Src/lab2_ex8.o
+ .group         0x0000000000000000        0xc ./Core/Src/lab2_ex8.o
+ .group         0x0000000000000000        0xc ./Core/Src/lab2_ex8.o
+ .group         0x0000000000000000        0xc ./Core/Src/lab2_ex8.o
+ .group         0x0000000000000000        0xc ./Core/Src/lab2_ex8.o
+ .group         0x0000000000000000        0xc ./Core/Src/lab2_ex8.o
+ .group         0x0000000000000000        0xc ./Core/Src/lab2_ex8.o
+ .group         0x0000000000000000        0xc ./Core/Src/lab2_ex8.o
+ .group         0x0000000000000000        0xc ./Core/Src/lab2_ex8.o
+ .group         0x0000000000000000        0xc ./Core/Src/lab2_ex8.o
+ .group         0x0000000000000000        0xc ./Core/Src/lab2_ex8.o
+ .group         0x0000000000000000        0xc ./Core/Src/lab2_ex8.o
+ .group         0x0000000000000000        0xc ./Core/Src/lab2_ex8.o
+ .group         0x0000000000000000        0xc ./Core/Src/lab2_ex8.o
+ .group         0x0000000000000000        0xc ./Core/Src/lab2_ex8.o
+ .group         0x0000000000000000        0xc ./Core/Src/lab2_ex8.o
+ .group         0x0000000000000000        0xc ./Core/Src/lab2_ex8.o
+ .group         0x0000000000000000        0xc ./Core/Src/lab2_ex8.o
+ .group         0x0000000000000000        0xc ./Core/Src/lab2_ex8.o
+ .group         0x0000000000000000        0xc ./Core/Src/lab2_ex8.o
+ .group         0x0000000000000000        0xc ./Core/Src/lab2_ex8.o
+ .group         0x0000000000000000        0xc ./Core/Src/lab2_ex8.o
+ .group         0x0000000000000000        0xc ./Core/Src/lab2_ex8.o
+ .group         0x0000000000000000        0xc ./Core/Src/lab2_ex8.o
+ .group         0x0000000000000000        0xc ./Core/Src/lab2_ex8.o
+ .group         0x0000000000000000        0xc ./Core/Src/lab2_ex8.o
+ .group         0x0000000000000000        0xc ./Core/Src/lab2_ex8.o
+ .group         0x0000000000000000        0xc ./Core/Src/lab2_ex8.o
+ .group         0x0000000000000000        0xc ./Core/Src/lab2_ex8.o
+ .group         0x0000000000000000        0xc ./Core/Src/lab2_ex8.o
+ .group         0x0000000000000000        0xc ./Core/Src/lab2_ex8.o
+ .group         0x0000000000000000        0xc ./Core/Src/lab2_ex8.o
+ .group         0x0000000000000000        0xc ./Core/Src/lab2_ex8.o
+ .group         0x0000000000000000        0xc ./Core/Src/lab2_ex8.o
+ .group         0x0000000000000000        0xc ./Core/Src/lab2_ex8.o
+ .group         0x0000000000000000        0xc ./Core/Src/lab2_ex8.o
+ .text          0x0000000000000000        0x0 ./Core/Src/lab2_ex8.o
+ .data          0x0000000000000000        0x0 ./Core/Src/lab2_ex8.o
+ .bss           0x0000000000000000        0x0 ./Core/Src/lab2_ex8.o
  .text.displayLEDMatrix
-                0x0000000000000000       0xf0 ./Core/Src/lab2_ex7.o
+                0x0000000000000000       0xf0 ./Core/Src/lab2_ex8.o
  .text.clearLEDMatrix
-                0x0000000000000000       0x6c ./Core/Src/lab2_ex7.o
+                0x0000000000000000       0x6c ./Core/Src/lab2_ex8.o
+ .group         0x0000000000000000        0xc ./Core/Src/main.o
  .group         0x0000000000000000        0xc ./Core/Src/main.o
  .group         0x0000000000000000        0xc ./Core/Src/main.o
  .group         0x0000000000000000        0xc ./Core/Src/main.o
@@ -2520,7 +2521,7 @@ Linker script and memory map
 LOAD C:/ST/STM32CubeIDE_1.14.0/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.100.202309141235/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/thumb/v7-m/nofp/crti.o
 LOAD C:/ST/STM32CubeIDE_1.14.0/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.100.202309141235/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/thumb/v7-m/nofp/crtbegin.o
 LOAD C:/ST/STM32CubeIDE_1.14.0/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.100.202309141235/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp/crt0.o
-LOAD ./Core/Src/lab2_ex7.o
+LOAD ./Core/Src/lab2_ex8.o
 LOAD ./Core/Src/main.o
 LOAD ./Core/Src/software_timer.o
 LOAD ./Core/Src/stm32f1xx_hal_msp.o
@@ -2578,22 +2579,22 @@ LOAD C:/ST/STM32CubeIDE_1.14.0/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.ext
  *(.text)
  .text          0x000000000800010c       0x40 C:/ST/STM32CubeIDE_1.14.0/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.100.202309141235/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/thumb/v7-m/nofp/crtbegin.o
  *(.text*)
- .text.setTime  0x000000000800014c       0x50 ./Core/Src/lab2_ex7.o
+ .text.setTime  0x000000000800014c       0x50 ./Core/Src/lab2_ex8.o
                 0x000000000800014c                setTime
  .text.blinkLed
-                0x000000000800019c       0x14 ./Core/Src/lab2_ex7.o
+                0x000000000800019c       0x14 ./Core/Src/lab2_ex8.o
                 0x000000000800019c                blinkLed
  .text.updateTime
-                0x00000000080001b0       0x68 ./Core/Src/lab2_ex7.o
+                0x00000000080001b0       0x68 ./Core/Src/lab2_ex8.o
                 0x00000000080001b0                updateTime
  .text.display_Led7seg
-                0x0000000008000218       0xcc ./Core/Src/lab2_ex7.o
+                0x0000000008000218       0xcc ./Core/Src/lab2_ex8.o
                 0x0000000008000218                display_Led7seg
  .text.updateClockBuffer
-                0x00000000080002e4       0x78 ./Core/Src/lab2_ex7.o
+                0x00000000080002e4       0x78 ./Core/Src/lab2_ex8.o
                 0x00000000080002e4                updateClockBuffer
  .text.update7SEG
-                0x000000000800035c       0xc4 ./Core/Src/lab2_ex7.o
+                0x000000000800035c       0xc4 ./Core/Src/lab2_ex8.o
                 0x000000000800035c                update7SEG
  .text.main     0x0000000008000420       0x84 ./Core/Src/main.o
                 0x0000000008000420                main
@@ -2903,7 +2904,7 @@ LOAD C:/ST/STM32CubeIDE_1.14.0/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.ext
  *(.data)
  *(.data*)
  .data.buffer_7seg
-                0x0000000020000000        0x4 ./Core/Src/lab2_ex7.o
+                0x0000000020000000        0x4 ./Core/Src/lab2_ex8.o
  .data.SystemCoreClock
                 0x0000000020000004        0x4 ./Core/Src/system_stm32f1xx.o
                 0x0000000020000004                SystemCoreClock
@@ -2929,9 +2930,9 @@ LOAD C:/ST/STM32CubeIDE_1.14.0/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.ext
  *(.bss)
  .bss           0x0000000020000010       0x1c C:/ST/STM32CubeIDE_1.14.0/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.100.202309141235/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/thumb/v7-m/nofp/crtbegin.o
  *(.bss*)
- .bss.sec       0x000000002000002c        0x1 ./Core/Src/lab2_ex7.o
- .bss.min       0x000000002000002d        0x1 ./Core/Src/lab2_ex7.o
- .bss.hour      0x000000002000002e        0x1 ./Core/Src/lab2_ex7.o
+ .bss.sec       0x000000002000002c        0x1 ./Core/Src/lab2_ex8.o
+ .bss.min       0x000000002000002d        0x1 ./Core/Src/lab2_ex8.o
+ .bss.hour      0x000000002000002e        0x1 ./Core/Src/lab2_ex8.o
  *fill*         0x000000002000002f        0x1 
  .bss.htim2     0x0000000020000030       0x48 ./Core/Src/main.o
                 0x0000000020000030                htim2
@@ -2979,7 +2980,7 @@ LOAD C:/ST/STM32CubeIDE_1.14.0/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.ext
  .ARM.attributes
                 0x000000000000001d       0x2d C:/ST/STM32CubeIDE_1.14.0/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.100.202309141235/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/thumb/v7-m/nofp/crtbegin.o
  .ARM.attributes
-                0x000000000000004a       0x2d ./Core/Src/lab2_ex7.o
+                0x000000000000004a       0x2d ./Core/Src/lab2_ex8.o
  .ARM.attributes
                 0x0000000000000077       0x2d ./Core/Src/main.o
  .ARM.attributes
@@ -3019,7 +3020,7 @@ LOAD C:/ST/STM32CubeIDE_1.14.0/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.ext
 .comment        0x0000000000000000       0x43
  .comment       0x0000000000000000       0x43 C:/ST/STM32CubeIDE_1.14.0/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.100.202309141235/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/thumb/v7-m/nofp/crtbegin.o
                                          0x44 (size before relaxing)
- .comment       0x0000000000000043       0x44 ./Core/Src/lab2_ex7.o
+ .comment       0x0000000000000043       0x44 ./Core/Src/lab2_ex8.o
  .comment       0x0000000000000043       0x44 ./Core/Src/main.o
  .comment       0x0000000000000043       0x44 ./Core/Src/software_timer.o
  .comment       0x0000000000000043       0x44 ./Core/Src/stm32f1xx_hal_msp.o
@@ -3033,7 +3034,7 @@ LOAD C:/ST/STM32CubeIDE_1.14.0/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.ext
  .comment       0x0000000000000043       0x44 ./Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim_ex.o
 
 .debug_info     0x0000000000000000     0x8417
- .debug_info    0x0000000000000000      0x2dc ./Core/Src/lab2_ex7.o
+ .debug_info    0x0000000000000000      0x2dc ./Core/Src/lab2_ex8.o
  .debug_info    0x00000000000002dc      0xbd6 ./Core/Src/main.o
  .debug_info    0x0000000000000eb2      0x6a2 ./Core/Src/software_timer.o
  .debug_info    0x0000000000001554      0x91a ./Core/Src/stm32f1xx_hal_msp.o
@@ -3048,7 +3049,7 @@ LOAD C:/ST/STM32CubeIDE_1.14.0/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.ext
  .debug_info    0x0000000000006f7c     0x149b ./Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim_ex.o
 
 .debug_abbrev   0x0000000000000000     0x1918
- .debug_abbrev  0x0000000000000000      0x1b2 ./Core/Src/lab2_ex7.o
+ .debug_abbrev  0x0000000000000000      0x1b2 ./Core/Src/lab2_ex8.o
  .debug_abbrev  0x00000000000001b2      0x295 ./Core/Src/main.o
  .debug_abbrev  0x0000000000000447      0x1d3 ./Core/Src/software_timer.o
  .debug_abbrev  0x000000000000061a      0x1ad ./Core/Src/stm32f1xx_hal_msp.o
@@ -3064,7 +3065,7 @@ LOAD C:/ST/STM32CubeIDE_1.14.0/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.ext
 
 .debug_aranges  0x0000000000000000      0x9b8
  .debug_aranges
-                0x0000000000000000       0x58 ./Core/Src/lab2_ex7.o
+                0x0000000000000000       0x58 ./Core/Src/lab2_ex8.o
  .debug_aranges
                 0x0000000000000058       0x40 ./Core/Src/main.o
  .debug_aranges
@@ -3093,7 +3094,7 @@ LOAD C:/ST/STM32CubeIDE_1.14.0/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.ext
 .debug_rnglists
                 0x0000000000000000      0x776
  .debug_rnglists
-                0x0000000000000000       0x40 ./Core/Src/lab2_ex7.o
+                0x0000000000000000       0x40 ./Core/Src/lab2_ex8.o
  .debug_rnglists
                 0x0000000000000040       0x2e ./Core/Src/main.o
  .debug_rnglists
@@ -3119,58 +3120,59 @@ LOAD C:/ST/STM32CubeIDE_1.14.0/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.ext
  .debug_rnglists
                 0x0000000000000651      0x125 ./Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim_ex.o
 
-.debug_macro    0x0000000000000000    0x166e6
- .debug_macro   0x0000000000000000      0x1b6 ./Core/Src/lab2_ex7.o
- .debug_macro   0x00000000000001b6      0xa9c ./Core/Src/lab2_ex7.o
- .debug_macro   0x0000000000000c52      0x215 ./Core/Src/lab2_ex7.o
- .debug_macro   0x0000000000000e67       0x2e ./Core/Src/lab2_ex7.o
- .debug_macro   0x0000000000000e95       0x22 ./Core/Src/lab2_ex7.o
- .debug_macro   0x0000000000000eb7       0x22 ./Core/Src/lab2_ex7.o
- .debug_macro   0x0000000000000ed9       0x8e ./Core/Src/lab2_ex7.o
- .debug_macro   0x0000000000000f67       0x51 ./Core/Src/lab2_ex7.o
- .debug_macro   0x0000000000000fb8      0x103 ./Core/Src/lab2_ex7.o
- .debug_macro   0x00000000000010bb       0x6a ./Core/Src/lab2_ex7.o
- .debug_macro   0x0000000000001125      0x1df ./Core/Src/lab2_ex7.o
- .debug_macro   0x0000000000001304       0x1c ./Core/Src/lab2_ex7.o
- .debug_macro   0x0000000000001320       0x22 ./Core/Src/lab2_ex7.o
- .debug_macro   0x0000000000001342       0xbd ./Core/Src/lab2_ex7.o
- .debug_macro   0x00000000000013ff      0xd23 ./Core/Src/lab2_ex7.o
- .debug_macro   0x0000000000002122     0xde75 ./Core/Src/lab2_ex7.o
- .debug_macro   0x000000000000ff97       0x6d ./Core/Src/lab2_ex7.o
- .debug_macro   0x0000000000010004     0x34a2 ./Core/Src/lab2_ex7.o
- .debug_macro   0x00000000000134a6      0x174 ./Core/Src/lab2_ex7.o
- .debug_macro   0x000000000001361a       0x5c ./Core/Src/lab2_ex7.o
- .debug_macro   0x0000000000013676      0x5bc ./Core/Src/lab2_ex7.o
- .debug_macro   0x0000000000013c32      0x1b7 ./Core/Src/lab2_ex7.o
- .debug_macro   0x0000000000013de9      0x1cb ./Core/Src/lab2_ex7.o
- .debug_macro   0x0000000000013fb4      0x114 ./Core/Src/lab2_ex7.o
- .debug_macro   0x00000000000140c8      0x1b2 ./Core/Src/lab2_ex7.o
- .debug_macro   0x000000000001427a       0x27 ./Core/Src/lab2_ex7.o
- .debug_macro   0x00000000000142a1      0x12f ./Core/Src/lab2_ex7.o
- .debug_macro   0x00000000000143d0      0x1bc ./Core/Src/lab2_ex7.o
- .debug_macro   0x000000000001458c       0x34 ./Core/Src/lab2_ex7.o
- .debug_macro   0x00000000000145c0       0x3c ./Core/Src/lab2_ex7.o
- .debug_macro   0x00000000000145fc       0x57 ./Core/Src/lab2_ex7.o
- .debug_macro   0x0000000000014653       0x87 ./Core/Src/lab2_ex7.o
- .debug_macro   0x00000000000146da      0x183 ./Core/Src/lab2_ex7.o
- .debug_macro   0x000000000001485d      0x140 ./Core/Src/lab2_ex7.o
- .debug_macro   0x000000000001499d      0x8ed ./Core/Src/lab2_ex7.o
- .debug_macro   0x000000000001528a       0x69 ./Core/Src/lab2_ex7.o
- .debug_macro   0x00000000000152f3      0x160 ./Core/Src/lab2_ex7.o
- .debug_macro   0x0000000000015453      0x1c4 ./Core/Src/main.o
- .debug_macro   0x0000000000015617      0x1b6 ./Core/Src/software_timer.o
- .debug_macro   0x00000000000157cd      0x1a6 ./Core/Src/stm32f1xx_hal_msp.o
- .debug_macro   0x0000000000015973      0x1b0 ./Core/Src/stm32f1xx_it.o
- .debug_macro   0x0000000000015b23      0x197 ./Core/Src/system_stm32f1xx.o
- .debug_macro   0x0000000000015cba      0x1bb ./Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.o
- .debug_macro   0x0000000000015e75      0x197 ./Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.o
- .debug_macro   0x000000000001600c      0x202 ./Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio.o
- .debug_macro   0x000000000001620e      0x1a9 ./Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.o
- .debug_macro   0x00000000000163b7      0x198 ./Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.o
- .debug_macro   0x000000000001654f      0x197 ./Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim_ex.o
+.debug_macro    0x0000000000000000    0x166ef
+ .debug_macro   0x0000000000000000      0x1b6 ./Core/Src/lab2_ex8.o
+ .debug_macro   0x00000000000001b6      0xa9c ./Core/Src/lab2_ex8.o
+ .debug_macro   0x0000000000000c52      0x215 ./Core/Src/lab2_ex8.o
+ .debug_macro   0x0000000000000e67       0x2e ./Core/Src/lab2_ex8.o
+ .debug_macro   0x0000000000000e95       0x22 ./Core/Src/lab2_ex8.o
+ .debug_macro   0x0000000000000eb7       0x22 ./Core/Src/lab2_ex8.o
+ .debug_macro   0x0000000000000ed9       0x8e ./Core/Src/lab2_ex8.o
+ .debug_macro   0x0000000000000f67       0x51 ./Core/Src/lab2_ex8.o
+ .debug_macro   0x0000000000000fb8      0x103 ./Core/Src/lab2_ex8.o
+ .debug_macro   0x00000000000010bb       0x6a ./Core/Src/lab2_ex8.o
+ .debug_macro   0x0000000000001125      0x1df ./Core/Src/lab2_ex8.o
+ .debug_macro   0x0000000000001304       0x1c ./Core/Src/lab2_ex8.o
+ .debug_macro   0x0000000000001320       0x22 ./Core/Src/lab2_ex8.o
+ .debug_macro   0x0000000000001342       0xbd ./Core/Src/lab2_ex8.o
+ .debug_macro   0x00000000000013ff      0xd23 ./Core/Src/lab2_ex8.o
+ .debug_macro   0x0000000000002122     0xde75 ./Core/Src/lab2_ex8.o
+ .debug_macro   0x000000000000ff97       0x6d ./Core/Src/lab2_ex8.o
+ .debug_macro   0x0000000000010004     0x34a2 ./Core/Src/lab2_ex8.o
+ .debug_macro   0x00000000000134a6      0x174 ./Core/Src/lab2_ex8.o
+ .debug_macro   0x000000000001361a       0x5c ./Core/Src/lab2_ex8.o
+ .debug_macro   0x0000000000013676      0x5bc ./Core/Src/lab2_ex8.o
+ .debug_macro   0x0000000000013c32      0x1b7 ./Core/Src/lab2_ex8.o
+ .debug_macro   0x0000000000013de9      0x1cb ./Core/Src/lab2_ex8.o
+ .debug_macro   0x0000000000013fb4      0x114 ./Core/Src/lab2_ex8.o
+ .debug_macro   0x00000000000140c8      0x1b2 ./Core/Src/lab2_ex8.o
+ .debug_macro   0x000000000001427a       0x27 ./Core/Src/lab2_ex8.o
+ .debug_macro   0x00000000000142a1      0x12f ./Core/Src/lab2_ex8.o
+ .debug_macro   0x00000000000143d0      0x1bc ./Core/Src/lab2_ex8.o
+ .debug_macro   0x000000000001458c       0x34 ./Core/Src/lab2_ex8.o
+ .debug_macro   0x00000000000145c0       0x3c ./Core/Src/lab2_ex8.o
+ .debug_macro   0x00000000000145fc       0x57 ./Core/Src/lab2_ex8.o
+ .debug_macro   0x0000000000014653       0x87 ./Core/Src/lab2_ex8.o
+ .debug_macro   0x00000000000146da      0x183 ./Core/Src/lab2_ex8.o
+ .debug_macro   0x000000000001485d      0x140 ./Core/Src/lab2_ex8.o
+ .debug_macro   0x000000000001499d      0x8ed ./Core/Src/lab2_ex8.o
+ .debug_macro   0x000000000001528a       0x69 ./Core/Src/lab2_ex8.o
+ .debug_macro   0x00000000000152f3      0x160 ./Core/Src/lab2_ex8.o
+ .debug_macro   0x0000000000015453      0x1bd ./Core/Src/main.o
+ .debug_macro   0x0000000000015610       0x10 ./Core/Src/main.o
+ .debug_macro   0x0000000000015620      0x1b6 ./Core/Src/software_timer.o
+ .debug_macro   0x00000000000157d6      0x1a6 ./Core/Src/stm32f1xx_hal_msp.o
+ .debug_macro   0x000000000001597c      0x1b0 ./Core/Src/stm32f1xx_it.o
+ .debug_macro   0x0000000000015b2c      0x197 ./Core/Src/system_stm32f1xx.o
+ .debug_macro   0x0000000000015cc3      0x1bb ./Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.o
+ .debug_macro   0x0000000000015e7e      0x197 ./Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.o
+ .debug_macro   0x0000000000016015      0x202 ./Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio.o
+ .debug_macro   0x0000000000016217      0x1a9 ./Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.o
+ .debug_macro   0x00000000000163c0      0x198 ./Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.o
+ .debug_macro   0x0000000000016558      0x197 ./Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim_ex.o
 
 .debug_line     0x0000000000000000     0xa89b
- .debug_line    0x0000000000000000      0x840 ./Core/Src/lab2_ex7.o
+ .debug_line    0x0000000000000000      0x840 ./Core/Src/lab2_ex8.o
  .debug_line    0x0000000000000840      0x830 ./Core/Src/main.o
  .debug_line    0x0000000000001070      0x776 ./Core/Src/software_timer.o
  .debug_line    0x00000000000017e6      0x729 ./Core/Src/stm32f1xx_hal_msp.o
@@ -3185,7 +3187,7 @@ LOAD C:/ST/STM32CubeIDE_1.14.0/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.ext
  .debug_line    0x0000000000008fe4     0x18b7 ./Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim_ex.o
 
 .debug_str      0x0000000000000000    0x8231e
- .debug_str     0x0000000000000000    0x7f8aa ./Core/Src/lab2_ex7.o
+ .debug_str     0x0000000000000000    0x7f8aa ./Core/Src/lab2_ex8.o
                                       0x7fbe7 (size before relaxing)
  .debug_str     0x000000000007f8aa      0x7c4 ./Core/Src/main.o
                                       0x803c9 (size before relaxing)
@@ -3213,7 +3215,7 @@ LOAD C:/ST/STM32CubeIDE_1.14.0/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.ext
                                       0x802f5 (size before relaxing)
 
 .debug_frame    0x0000000000000000     0x2764
- .debug_frame   0x0000000000000000      0x11c ./Core/Src/lab2_ex7.o
+ .debug_frame   0x0000000000000000      0x11c ./Core/Src/lab2_ex8.o
  .debug_frame   0x000000000000011c       0xb4 ./Core/Src/main.o
  .debug_frame   0x00000000000001d0       0xa4 ./Core/Src/software_timer.o
  .debug_frame   0x0000000000000274       0x80 ./Core/Src/stm32f1xx_hal_msp.o

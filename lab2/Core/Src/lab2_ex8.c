@@ -1,11 +1,11 @@
 /*
- * lab2_ex7.c
+ * lab2_ex8.c
  *
  *  Created on: Sep 26, 2024
  *      Author: ASUS
  */
 
-#include "lab2_ex7.h"
+#include "lab2_ex8.h"
 
 #define BUFFER_SIZE 4
 
