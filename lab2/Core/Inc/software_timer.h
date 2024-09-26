@@ -8,17 +8,18 @@
 #ifndef INC_SOFTWARE_TIMER_H_
 #define INC_SOFTWARE_TIMER_H_
 
-extern int timer1_counter;
-extern int timer1_flag;
+#include "main.h"
 
-extern int timer2_counter;
+#define TIMER_CYCLE 1
+
+extern int timer1_flag;
 extern int timer2_flag;
-extern const int TIMER_CYCLE;
+
 
 extern void setTimer1(int duration);
 extern void setTimer2(int duration);
 extern void timer_run();
 
-
+void HAL_TIM_PeriodElapsedCallback(TIM_HandleTypeDef *htim);
 
 #endif /* INC_SOFTWARE_TIMER_H_ */

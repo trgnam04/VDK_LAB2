@@ -1,0 +1,8 @@
+../Core/Src/lab2_ex7.c:21:6:setTime	4
+../Core/Src/lab2_ex7.c:28:6:blinkLed	1
+../Core/Src/lab2_ex7.c:32:6:updateTime	4
+../Core/Src/lab2_ex7.c:46:6:display_Led7seg	11
+../Core/Src/lab2_ex7.c:84:6:updateClockBuffer	1
+../Core/Src/lab2_ex7.c:91:6:update7SEG	5
+../Core/Src/lab2_ex7.c:124:6:displayLEDMatrix	1
+../Core/Src/lab2_ex7.c:135:6:clearLEDMatrix	1
