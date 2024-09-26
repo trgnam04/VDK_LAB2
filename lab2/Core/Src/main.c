@@ -22,11 +22,14 @@
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
 #include "software_timer.h"
+#include "lab2_ex3.h"
 
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
 /* USER CODE BEGIN PTD */
+int idx = 0;
+
 
 /* USER CODE END PTD */
 
@@ -42,14 +45,7 @@
 
 /* Private variables ---------------------------------------------------------*/
 TIM_HandleTypeDef htim2;
-const int MAX_LED = 4;
-int index_led = 0;
-int led_buffer[4] = {1, 2, 3, 4};
-
-
 /* USER CODE BEGIN PV */
-void Display_leg7seg(uint8_t counter);
-void update7SEG(int index);
 
 
 /* USER CODE END PV */
@@ -97,7 +93,7 @@ int main(void)
   MX_GPIO_Init();
   MX_TIM2_Init();
   HAL_TIM_Base_Start_IT(&htim2);
-
+  setTimer2(50);
 
   /* USER CODE BEGIN 2 */
 
@@ -241,175 +237,14 @@ static void MX_GPIO_Init(void)
 }
 
 /* USER CODE BEGIN 4 */
-void Display_leg7seg(uint8_t counter){
-	//led display number 0 by enable 6 ports as follow (reset state)
-		if (counter == 0) {
-			HAL_GPIO_WritePin(GPIOB, SEG0_Pin, RESET);
-			HAL_GPIO_WritePin(GPIOB, SEG1_Pin, RESET);
-			HAL_GPIO_WritePin(GPIOB, SEG2_Pin, RESET);
-			HAL_GPIO_WritePin(GPIOB, SEG3_Pin, RESET);
-			HAL_GPIO_WritePin(GPIOB, SEG4_Pin, RESET);
-			HAL_GPIO_WritePin(GPIOB, SEG5_Pin, RESET);
-			HAL_GPIO_WritePin(GPIOB, SEG6_Pin, SET);
-		}
-		//led display number 1 by enable 2 ports as follow (reset state)
-		if (counter == 1) {
-			HAL_GPIO_WritePin(GPIOB, SEG0_Pin, SET);
-			HAL_GPIO_WritePin(GPIOB, SEG1_Pin, RESET);
-			HAL_GPIO_WritePin(GPIOB, SEG2_Pin, RESET);
-			HAL_GPIO_WritePin(GPIOB, SEG3_Pin, SET);
-			HAL_GPIO_WritePin(GPIOB, SEG4_Pin, SET);
-			HAL_GPIO_WritePin(GPIOB, SEG5_Pin, SET);
-			HAL_GPIO_WritePin(GPIOB, SEG6_Pin, SET);
-		}
-		//led display number 2 by enable 5 ports as follow (reset state)
-		if (counter == 2) {
-			HAL_GPIO_WritePin(GPIOB, SEG0_Pin, RESET);
-			HAL_GPIO_WritePin(GPIOB, SEG1_Pin, RESET);
-			HAL_GPIO_WritePin(GPIOB, SEG2_Pin, SET);
-			HAL_GPIO_WritePin(GPIOB, SEG3_Pin, RESET);
-			HAL_GPIO_WritePin(GPIOB, SEG4_Pin, RESET);
-			HAL_GPIO_WritePin(GPIOB, SEG5_Pin, SET);
-			HAL_GPIO_WritePin(GPIOB, SEG6_Pin, RESET);
-		}
-		//led display number 3 by enable 5 ports as follow (reset state)
-		if (counter == 3) {
-			HAL_GPIO_WritePin(GPIOB, SEG0_Pin, RESET);
-			HAL_GPIO_WritePin(GPIOB, SEG1_Pin, RESET);
-			HAL_GPIO_WritePin(GPIOB, SEG2_Pin, RESET);
-			HAL_GPIO_WritePin(GPIOB, SEG3_Pin, RESET);
-			HAL_GPIO_WritePin(GPIOB, SEG4_Pin, SET);
-			HAL_GPIO_WritePin(GPIOB, SEG5_Pin, SET);
-			HAL_GPIO_WritePin(GPIOB, SEG6_Pin, RESET);
-		}
-		//led display number 4 by enable 4 ports as follow (reset state)
-		if (counter == 4) {
-			HAL_GPIO_WritePin(GPIOB, SEG0_Pin, SET);
-			HAL_GPIO_WritePin(GPIOB, SEG1_Pin, RESET);
-			HAL_GPIO_WritePin(GPIOB, SEG2_Pin, RESET);
-			HAL_GPIO_WritePin(GPIOB, SEG3_Pin, SET);
-			HAL_GPIO_WritePin(GPIOB, SEG4_Pin, SET);
-			HAL_GPIO_WritePin(GPIOB, SEG5_Pin, RESET);
-			HAL_GPIO_WritePin(GPIOB, SEG6_Pin, RESET);
-		}
-		//led display number 5 by enable 5 ports as follow (reset state)
-		if (counter == 5) {
-			HAL_GPIO_WritePin(GPIOB, SEG0_Pin, RESET);
-			HAL_GPIO_WritePin(GPIOB, SEG1_Pin, SET);
-			HAL_GPIO_WritePin(GPIOB, SEG2_Pin, RESET);
-			HAL_GPIO_WritePin(GPIOB, SEG3_Pin, RESET);
-			HAL_GPIO_WritePin(GPIOB, SEG4_Pin, SET);
-			HAL_GPIO_WritePin(GPIOB, SEG5_Pin, RESET);
-			HAL_GPIO_WritePin(GPIOB, SEG6_Pin, RESET);
-		}
-		//led display number 6 by enable 6 ports as follow (reset state)
-		if (counter == 6) {
-			HAL_GPIO_WritePin(GPIOB, SEG0_Pin, RESET);
-			HAL_GPIO_WritePin(GPIOB, SEG1_Pin, SET);
-			HAL_GPIO_WritePin(GPIOB, SEG2_Pin, RESET);
-			HAL_GPIO_WritePin(GPIOB, SEG3_Pin, RESET);
-			HAL_GPIO_WritePin(GPIOB, SEG4_Pin, RESET);
-			HAL_GPIO_WritePin(GPIOB, SEG5_Pin, RESET);
-			HAL_GPIO_WritePin(GPIOB, SEG6_Pin, RESET);
-		}
-		//led display number 7 by enable 3 ports as follow (reset state)
-		if (counter == 7) {
-			HAL_GPIO_WritePin(GPIOB, SEG0_Pin, RESET);
-			HAL_GPIO_WritePin(GPIOB, SEG1_Pin, RESET);
-			HAL_GPIO_WritePin(GPIOB, SEG2_Pin, RESET);
-			HAL_GPIO_WritePin(GPIOB, SEG3_Pin, SET);
-			HAL_GPIO_WritePin(GPIOB, SEG4_Pin, SET);
-			HAL_GPIO_WritePin(GPIOB, SEG5_Pin, SET);
-			HAL_GPIO_WritePin(GPIOB, SEG6_Pin, SET);
-		}
-		//led display number 8 by enable 7 ports as follow (reset state)
-		if (counter == 8) {
-			HAL_GPIO_WritePin(GPIOB, SEG0_Pin, RESET);
-			HAL_GPIO_WritePin(GPIOB, SEG1_Pin, RESET);
-			HAL_GPIO_WritePin(GPIOB, SEG2_Pin, RESET);
-			HAL_GPIO_WritePin(GPIOB, SEG3_Pin, RESET);
-			HAL_GPIO_WritePin(GPIOB, SEG4_Pin, RESET);
-			HAL_GPIO_WritePin(GPIOB, SEG5_Pin, RESET);
-			HAL_GPIO_WritePin(GPIOB, SEG6_Pin, RESET);
-		}
-		//led display number 9 by enable 6 ports as follow (reset state)
-		if (counter == 9) {
-			HAL_GPIO_WritePin(GPIOB, SEG0_Pin, RESET);
-			HAL_GPIO_WritePin(GPIOB, SEG1_Pin, RESET);
-			HAL_GPIO_WritePin(GPIOB, SEG2_Pin, RESET);
-			HAL_GPIO_WritePin(GPIOB, SEG3_Pin, RESET);
-			HAL_GPIO_WritePin(GPIOB, SEG4_Pin, SET);
-			HAL_GPIO_WritePin(GPIOB, SEG5_Pin, RESET);
-			HAL_GPIO_WritePin(GPIOB, SEG6_Pin, RESET);
-		}
-}
-
-void update7SEG(int index){
-	switch(index){
-		case 0:{
-			HAL_GPIO_WritePin(GPIOA, EN0_Pin, 0);
-			HAL_GPIO_WritePin(GPIOA, EN1_Pin, 1);
-			HAL_GPIO_WritePin(GPIOA, EN2_Pin, 1);
-			HAL_GPIO_WritePin(GPIOA, EN3_Pin, 1);
-			Display_leg7seg(1);
-
-			break;
-		}
-		case 1:{
-			HAL_GPIO_WritePin(GPIOA, EN0_Pin, 1);
-			HAL_GPIO_WritePin(GPIOA, EN1_Pin, 0);
-			HAL_GPIO_WritePin(GPIOA, EN2_Pin, 1);
-			HAL_GPIO_WritePin(GPIOA, EN3_Pin, 1);
-			Display_leg7seg(2);
-
-			break;
-		}
-		case 2:{
-			HAL_GPIO_WritePin(GPIOA, EN0_Pin, 1);
-			HAL_GPIO_WritePin(GPIOA, EN1_Pin, 1);
-			HAL_GPIO_WritePin(GPIOA, EN2_Pin, 0);
-			HAL_GPIO_WritePin(GPIOA, EN3_Pin, 1);
-			Display_leg7seg(3);
-
-			break;
-		}
-		case 3:{
-			HAL_GPIO_WritePin(GPIOA, EN0_Pin, 1);
-			HAL_GPIO_WritePin(GPIOA, EN1_Pin, 1);
-			HAL_GPIO_WritePin(GPIOA, EN2_Pin, 1);
-			HAL_GPIO_WritePin(GPIOA, EN3_Pin, 0);
-			Display_leg7seg(4);
-
-			break;
-		}
-	}
-}
-
-uint8_t status = 0;
-int dot_blinky = 50;
-int led7seg_freg = 50;
 void HAL_TIM_PeriodElapsedCallback(TIM_HandleTypeDef *htim){
 	if(htim->Instance == TIM2){
-
-		if(dot_blinky <= 0){
-			dot_blinky = 50;
-			HAL_GPIO_TogglePin(GPIOA, DOT_Pin);
+		timer2_counter--;
+		if(timer2_counter == 0){
+			setTimer2(50);
+			update7SEG(idx++);
+			if(idx == 4) idx = 0;
 		}
-
-		if(led7seg_freg <= 0){
-			led7seg_freg = 50;
-
-			if(index_led >= MAX_LED){
-				index_led = 0;
-			}
-
-			update7SEG(index_led++);
-		}
-
-		dot_blinky--;
-		led7seg_freg--;
-
-
 	}
 }
 
