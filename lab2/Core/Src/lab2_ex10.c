@@ -1,11 +1,11 @@
 /*
- * lab2_ex8.c
+ * lab2_ex10.c
  *
  *  Created on: Sep 26, 2024
  *      Author: ASUS
  */
 
-#include "lab2_ex9.h"
+#include "lab2_ex10.h"
 
 #define MAX_LED_MATRIX 8
 
@@ -25,6 +25,11 @@ void displayLEDMatrix(int num){
 void clearLEDMatrix(){
 	HAL_GPIO_WritePin(GPIOB, ROW0_Pin|ROW1_Pin|ROW2_Pin|ROW3_Pin|ROW4_Pin|ROW5_Pin|ROW6_Pin|ROW7_Pin, SET);
 }
+
+void displayOnLEDMatrix(){
+	HAL_GPIO_WritePin(GPIOB, ROW0_Pin|ROW1_Pin|ROW2_Pin|ROW3_Pin|ROW4_Pin|ROW5_Pin|ROW6_Pin|ROW7_Pin, RESET);
+}
+
 
 void updateLEDMatrix(int index){
 	switch(index){
@@ -79,5 +84,12 @@ void updateLEDMatrix(int index){
 	default:{
 		break;
 	}
+	}
+}
+
+
+void ledMatrixEffect() {
+	for(int i = 0; i < 8; i++) {
+		matrix_buffer[i] = (matrix_buffer[i] >> 1) | (matrix_buffer[i] << 7);
 	}
 }

@@ -17,12 +17,12 @@
   */
 /* USER CODE END Header */
 /* Includes ------------------------------------------------------------------*/
+#include "lab2_ex10.h"
 #include "main.h"
 
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
 #include "software_timer.h"
-#include "lab2_ex9.h"
 
 /* USER CODE END Includes */
 
@@ -91,7 +91,7 @@ int main(void)
   MX_TIM2_Init();
   HAL_TIM_Base_Start_IT(&htim2);
   /* USER CODE BEGIN 2 */
-  setTimer1(100);
+  setTimer1(10);
   int idx = 0;
 
   /* USER CODE END 2 */
@@ -104,9 +104,12 @@ int main(void)
 
     /* USER CODE BEGIN 3 */
 	  if(timer1_flag){
-		  setTimer1(100);
+		  setTimer1(10);
 		  updateLEDMatrix(idx++);
-		  if(idx > 7) idx = 0;
+		  if(idx > 7){
+			  ledMatrixEffect();
+			  idx = 0;
+		  }
 	  }
 
 
