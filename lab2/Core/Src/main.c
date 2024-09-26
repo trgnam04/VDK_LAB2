@@ -17,12 +17,12 @@
   */
 /* USER CODE END Header */
 /* Includes ------------------------------------------------------------------*/
-#include "lab2_ex8.h"
 #include "main.h"
 
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
 #include "software_timer.h"
+#include "lab2_ex9.h"
 
 /* USER CODE END Includes */
 
@@ -92,12 +92,10 @@ int main(void)
   HAL_TIM_Base_Start_IT(&htim2);
   /* USER CODE BEGIN 2 */
   setTimer1(100);
-  setTimer2(50);
-  setTime(0, 30, 12);
-  uint8_t idx = 0;
+  int idx = 0;
 
   /* USER CODE END 2 */
-
+  clearLEDMatrix();
   /* Infinite loop */
   /* USER CODE BEGIN WHILE */
   while (1)
@@ -107,14 +105,8 @@ int main(void)
     /* USER CODE BEGIN 3 */
 	  if(timer1_flag){
 		  setTimer1(100);
-		  updateTime();
-		  updateClockBuffer();
-	  }
-	  if(timer2_flag){
-		  setTimer2(50);
-		  blinkLed();
-		  update7SEG(idx++);
-		  if(idx == 4) idx = 0;
+		  updateLEDMatrix(idx++);
+		  if(idx > 7) idx = 0;
 	  }
 
 

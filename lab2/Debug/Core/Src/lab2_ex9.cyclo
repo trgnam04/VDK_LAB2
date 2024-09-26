@@ -1,0 +1,3 @@
+../Core/Src/lab2_ex9.c:14:6:displayLEDMatrix	1
+../Core/Src/lab2_ex9.c:25:6:clearLEDMatrix	1
+../Core/Src/lab2_ex9.c:29:6:updateLEDMatrix	9
