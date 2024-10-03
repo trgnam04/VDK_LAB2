@@ -240,6 +240,7 @@ static void MX_GPIO_Init(void)
 void HAL_TIM_PeriodElapsedCallback(TIM_HandleTypeDef *htim){
 	if(htim->Instance == TIM2){
 		timer2_counter--;
+		blinkLed();
 		if(timer2_counter == 0){
 			setTimer2(50);
 			update7SEG(idx++);
