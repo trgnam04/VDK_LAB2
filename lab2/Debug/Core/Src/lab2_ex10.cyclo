@@ -1,0 +1,5 @@
+../Core/Src/lab2_ex10.c:14:6:displayLEDMatrix	1
+../Core/Src/lab2_ex10.c:25:6:clearLEDMatrix	1
+../Core/Src/lab2_ex10.c:29:6:displayOnLEDMatrix	1
+../Core/Src/lab2_ex10.c:34:6:updateLEDMatrix	9
+../Core/Src/lab2_ex10.c:91:6:ledMatrixEffect	2

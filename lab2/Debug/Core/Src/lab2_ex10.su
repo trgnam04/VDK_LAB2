@@ -1,0 +1,5 @@
+../Core/Src/lab2_ex10.c:14:6:displayLEDMatrix	16	static
+../Core/Src/lab2_ex10.c:25:6:clearLEDMatrix	8	static
+../Core/Src/lab2_ex10.c:29:6:displayOnLEDMatrix	8	static
+../Core/Src/lab2_ex10.c:34:6:updateLEDMatrix	16	static
+../Core/Src/lab2_ex10.c:91:6:ledMatrixEffect	16	static
