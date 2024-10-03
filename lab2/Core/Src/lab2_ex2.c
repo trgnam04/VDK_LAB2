@@ -9,7 +9,7 @@
 #include "lab2_ex2.h"
 
 #define BUFFER_SIZE 4
-#define BLINKY_TIME 50
+#define BLINKY_TIME 100
 #define CLOCK_FREQ	50
 
 

@@ -239,8 +239,7 @@ static void MX_GPIO_Init(void)
 void HAL_TIM_PeriodElapsedCallback(TIM_HandleTypeDef *htim){
 	if(htim->Instance == TIM2){
 		display_Clock();
-
-
+		blinkLed();
 	}
 }
 

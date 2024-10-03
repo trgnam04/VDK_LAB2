@@ -1,4 +1,4 @@
-../Core/Src/lab2_ex2.c:27:6:setTime	1
+../Core/Src/lab2_ex2.c:27:6:setTime	4
 ../Core/Src/lab2_ex2.c:34:6:blinkLed	2
 ../Core/Src/lab2_ex2.c:42:6:updateTime	4
 ../Core/Src/lab2_ex2.c:56:6:display_Led7seg	11
